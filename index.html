@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html>
   <title>Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            color: #333;
-        }
-        p {
-            text-align: center;
-            color: #666;
-            font-size: 1.2em;
-        }
-        .cta-button {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 10px 20px;
-            text-align: center;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moon Landing Pictures</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    h1 {
+        margin: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
 </head>
 <body>
+    <header>
+        <h1>Moon Landing Pictures</h1>
+    </header>
     <div class="container">
-        <h1>Welcome to Our Website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet neque sit amet tellus vestibulum, eget commodo ante eleifend.</p>
-        <a href="#" class="cta-button">Learn More</a>
+        <div class="gallery">
+            <img src="moonlanding1.jpg" alt="Moon Landing 1">
+            <img src="moonlanding2.jpg" alt="Moon Landing 2">
+            <img src="moonlanding3.jpg" alt="Moon Landing 3">
+            <!-- Add more images as needed -->
+        </div>
     </div>
 </body>
 </html>
